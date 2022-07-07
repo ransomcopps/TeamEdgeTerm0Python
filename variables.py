@@ -4,9 +4,9 @@
 # -------------------------------------------- 
 
 # Example
-message = "Hello World!"
-print(message)
-
+name = 'Ransom'
+grade = 10
+funFact = 'i like to watch anime'
 # -------------------------------------------- 
 # Challenge 1:
 # 
@@ -18,9 +18,9 @@ print(message)
 
 print("\n------------------- Challenge 1 -------------------\n")
 
-#print(f"Hi! My name is {name}")
-#print(f"I'm in the {grade}th grade.")
-#print(f"A fun fact about me is that {funFact}")
+print(f"Hi! My name is {name}")
+print(f"I'm in the {grade}th grade.")
+print(f"A fun fact about me is that {funFact}")
 
 
 # **** Challenge 1: Problem 1 ****
@@ -58,36 +58,35 @@ print("\n------------------- Challenge 2 -------------------\n")
 # Here are some variables to get you started
 num1 = 5
 num2 = 10
-
+sum = (num1 + num2)
 # **** Challenge 2: Problem 1 ****
 # Store the sum of num1 and num2 in a variable.
 # Print the sum.
-
+print(num1 + num2) 
 
 # **** Challenge 2: Problem 2 ****
 # Store the difference between sum (above) and 7 in a variable.
 # Print the difference.
-
+print(sum - 7)
 
 # **** Challenge 2: Problem 3 ****
 # Store the product of the difference and 3 in a variable.
 # Print the product.
-
-
+print(8 * 3)
 # **** Challenge 2: Problem 4 ****
 # Store the power of the product squared in a variable.
 # Print the power.
-
+print(24**2)
 
 # **** Challenge 2: Problem 5 ****
 # Store the quotient of the power divided by 4 in a variable.
 # Print the quotient.
-
+print(576/4)
 
 # **** Challenge 2: Problem 6 ****
 # Store the remainder of the quotient divided by 2 in a variable.
 # Print the remainder.
-
+print(144.8/2)
 
 # **** Upchallenge! ****
 # Given a variable that stores a number, print the values that come right before and right after.
