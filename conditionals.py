@@ -12,6 +12,12 @@ print("\n------------------- Challenge 1 -------------------\n")
    # Prompt the user to enter their age.
    # Write conditional statements that print out whether the user is legally allowed to drive in your city. 
 
+age = int(input("Enter your age: "))
+
+if age >= 18 :
+   print("you can drive the whip")
+else:
+   print("you not driving bruh")
 
 
 
@@ -43,7 +49,7 @@ print("\n------------------- Challenge 2 -------------------\n")
 
 # -------------------------------------------- 
 
-print("\n------------------- Challenge 3 -------------------\n")
+#print("\n------------------- Challenge 3 -------------------\n")
 
 # One of the most common parts of our daily routine is checking the weather. 
 # Our outfit and accessories are dependent on the temperature and conditions outside. 

@@ -1,4 +1,5 @@
 import random
+print(random.randint(0,19)) 
 
 # -------------------------------------------- 
 
@@ -14,11 +15,6 @@ import random
 
   # -------------------------------------------- 
 
-	# How a Magic 8 Ball Works:
-
-	# The user asks a question and vigoriously shakes the ball. 
-	# Then the ball will respond with one of twenty responses, chosen at random. 
-
 	# That's pretty simple right?
 
  # -------------------------------------------- 
@@ -27,17 +23,55 @@ import random
 	# Print instructions on the screen and 
 	# prompt the user to ask a question
 
+print("How a Magic 8 Ball Works:")
+
+print("The user asks a question and vigoriously shakes the ball.") 
+print("Then the ball will respond with one of twenty responses, chosen at random.") 
 	
 
-  # --------------------------------------------
+question = input("what question do you have king/queen? \n")
+number = random.randint(0,19)
 
-
-
-
-
-
-
-
+if number== 0:
+	print("It is certain.")
+elif number== 1:
+	print("It is decidedly so.")
+elif number== 2:
+	print("Without a doubt.")
+elif number== 3:
+	print("Yes - definitely.")
+elif number== 4:
+	print("You may rely on it.")
+elif number== 5:
+	print("As I see it, yes.")
+elif number== 6:
+	print("Most likely.")
+elif number== 7:
+	print("Outlook good.")
+elif number== 8:
+	print("Yes.")
+elif number== 9:
+	print("Signs point to yes.")
+elif number==10:
+	print("Reply hazy, try again.")
+elif number==11:
+	print("Ask again later.")
+elif number==12:
+	print("Better not tell you now.")
+elif number==13:
+	print("Cannot predict now.")
+elif number==14:
+	print("Concentrate and ask again.")
+elif number==15:
+	print("Dont count on it.")
+elif number==16:
+	print("My reply is no.")
+elif number==17:
+	print("My sources say no.")
+elif number==18:
+	print("Outlook not so good.")
+elif number==19:
+	print("very doubtful.")
 
 
 

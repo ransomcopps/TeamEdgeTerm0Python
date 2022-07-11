@@ -1,7 +1,5 @@
-age = 17
-school = 'BASE'
-print('my favorite food is undefined')
-print(age) 
-#this prints my age
 
-print(f'my age is {age} and my school is {school}')
+name = input("what is your name")
+BirthdayMonth = input("what month is your birthday")
+
+print(f"wow {name} it is {BirthdayMonth} so enjoy your bday month")

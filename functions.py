@@ -15,33 +15,52 @@
   # Challenge 1: Let's try to write some basic functions.
 # -------------------------------------------- 
 
-print("\n------------------- Challenge 1 -------------------\n")
+#print("\n------------------- Challenge 1 -------------------\n")
 
 # **** Challenge 1: Problem 1 ****
 # Write a function called print_message() that prints any message you want.
 
 
+#def print_message():
+	#print("your message has been printed.")
+
 # **** Challenge 1: Problem 2 ****
 # Write a function called print_five_messages() that calls print_message() five times.
-
+#def print_five_messages():
+	#print_message()
+	#print_message()
+	#print_message()
+	#print_message()
+	##print_message()
+	
 
 # **** Challenge 1: Problem 3 ****
 # Write a function called get_user_input() that asks the user if they'd like to print your message
 # once or five times. Then call one of the two functions above based on what the user decides.
-
-
+#def get_user_input():
+	#numb =int(input("do you want to print out the message 1 time or 5 times? \n"))
+	#if numb == 1:
+		#print_message()
+	#else:
+		#print_five_messages()
+#get_user_input()
 # **** Challenge 1: Problem 4 ****
 # Write a function called print_greeting() that prints a greeting message to the user.
-
+#def print_greeting():
+	#print("greetings")
+	
 
 # **** Challenge 1: Problem 5 ****
 # Write a function called print_closing() that prints a goodbye message to the user.
+#def print_closing():
+	print("goodbye")
 
 
 # **** Challenge 1: Problem 6 ****
 # Write a function called run() that greets the user, asks them for input, and sends a goodbye message.
 # Remember! Use the functions that you've already made. Don't hardcode anything!
 
+		
 
 
 # -------------------------------------------- 
@@ -64,7 +83,7 @@ print("\n------------------- Challenge 2 -------------------\n")
 		# sum_double(2, 2) → 8
 
 # -------------------------------------------- 
-
+sum_double(4,2)
 
 
 
