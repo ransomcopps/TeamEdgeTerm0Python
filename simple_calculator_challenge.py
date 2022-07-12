@@ -1,5 +1,6 @@
 # -------------------------------------------- 
-
+x= 20
+y= 30
 	# You've just learned all about functions. 
 	# Now take what you've learned to create your own
 
@@ -28,29 +29,32 @@ print("My Simple Calculator")
 # -------------------------------------------- 
 
 # Write a function called add_numbers that will take two numbers and return the sum.
-
-
+def add_numbers(x,y):
+	return x+y
+sum = add_numbers(x,y)
+print(sum)
 
 
 
 
 
 # Write a function called sub_numbers that will take two numbers and return the difference.
-
-
+def sub_numbers(x,y):
+	return x-y
+sub_numbers(x,y)
 
 
 
 # ------------
 # Testing Code - Uncomment the code below to test your code!
 
-# check_answers(add_numbers(5, 15), 20)
-# check_answers(add_numbers(3, 18), 21)
-# check_answers(add_numbers(12, 28), 40)
+#(add_numbers(5, 15), 20)
+#(add_numbers(3, 18), 21)
+#(add_numbers(12, 28), 40)
 
-# check_answers(sub_numbers(18, 7), 11)
-# check_answers(sub_numbers(11, 9), 2)
-# check_answers(sub_numbers(18, 21), -3)
+#(sub_numbers(18, 7), 11)
+#(sub_numbers(11, 9), 2)
+
 
 # -------------------------------------------- 
 

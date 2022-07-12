@@ -41,7 +41,8 @@
 # Remember: Your user should be able to order at least 3 items (a drink, meal, and dessert item). 
 
 # --------------------------------------------
-
+primary_orders = 0
+secondary_orders = 0
 
 
 # -------------------------------------------- 
@@ -53,12 +54,41 @@
 # - Print each item available and it's cost. You should have at least 3 items available (a drink, meal, and dessert item). 
 
 # --------------------------------------------
+print("welcome to Ransom's top tier food shop.")
+primary_orders=int (input("is there anything that you want from this fine place?\n 1-for $6sushi   2-for $9cabbage  3-for $5onions\n"))
+sushi = 1
+cabbage = 2
+onions = 3
+total = 0.00
+if primary_orders == 1:
+	print("sushi = $6")
+	total = total + 6.00
+elif primary_orders == 2:
+	print("cabbage = $9")
+	total = total + 9.00
+elif primary_orders == 3:
+	print("onions = $5")
+	total = total + 5.00
+else:
+	print("ok so nothing >:(")
+	total = total + 0.00
 
-
-
-
-
-
+secondary_orders=int(input("what bev you picking?\n 4-for $10sprite   5-for $11diet sprite  6-for $20chakara in a can\n"))
+sprite = 4
+diet_sprite = 5
+chakara_in_a_can = 6
+if secondary_orders == 4:
+	print("sprite = $10")
+	total = total + 10.00
+elif secondary_orders == 5:
+	print("diet_sprite = $11")
+	total = total + 11.00
+elif secondary_orders == 6:
+	print("chakara in a can = $20")
+	total = total + 20.00
+else:
+	print("ok so nothing >:(")
+	total = total + 0.00
 # -------------------------------------------- 
 
 # Part 3:
@@ -94,12 +124,21 @@
 # - Tip (Give the user the option to enter how much they want to tip)
 
 # Remember! Functions are meant to be reusable, so write a function that will work when called for each person!
-
 # -------------------------------------------- 
-
-
-
-
+tip = int (input("type the amount you want to tip ransom:\n"))
+if tip < 0:
+	print("this is not acceptable :(")
+	tip = 0
+print("your oreder's normal cost is:")
+print(total)
+print("taxes:")
+total2 = total * 0.08875
+print(total2)
+print("your tip will be:")
+print(tip)
+print("you'll pay:")
+total3 = total + total2 + tip 
+print(total3)
 
 
 
@@ -123,7 +162,37 @@
 
 
 # -------------------------------------------- 
+print("this is your receipt:")
+if primary_orders == 1:
+	print("sushi = $6")
+	
+elif primary_orders == 2:
+	print("cabbage = $9")
+	
+	
+elif primary_orders == 3:
+	print("onions = $5")
+	
 
+	
+	
+
+print("drink:")
+if secondary_orders == 4:
+	print("sprite = $10")
+	
+elif secondary_orders == 5:
+	print("diet_sprite = $11")
+	
+elif secondary_orders == 6:
+	print("chakara in a can = $20")
+print(total)
+print("taxes:")
+print(total2)
+print("tip")
+print(tip)
+print("how much you payed:")
+print(total3)
 
 
 
