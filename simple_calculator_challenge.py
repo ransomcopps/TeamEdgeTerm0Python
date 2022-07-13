@@ -1,6 +1,6 @@
 # -------------------------------------------- 
-x= 20
-y= 30
+x= 10
+y= 5
 	# You've just learned all about functions. 
 	# Now take what you've learned to create your own
 
@@ -41,8 +41,8 @@ print(sum)
 # Write a function called sub_numbers that will take two numbers and return the difference.
 def sub_numbers(x,y):
 	return x-y
-sub_numbers(x,y)
-
+difference = sub_numbers(x,y)
+print(difference)
 
 
 # ------------
@@ -71,14 +71,17 @@ sub_numbers(x,y)
 # -------------------------------------------- 
 
 # Write a function called multiply_numbers that will take two numbers and return the product.
-
-
-
-
+def multiply_numbers(x,y):
+	return x*y
+product = multiply_numbers(x,y)
+print(product)
 
 
 # Write a function called divide_numbers that will take two numbers and return the quotient.
-
+def divide_numbers(x,y):
+	return x/y
+quotient = divide_numbers(x,y)
+print(quotient)
 
 
 
@@ -106,8 +109,12 @@ sub_numbers(x,y)
 
 # -------------------------------------------- 
 
-
-
+choice = input("use + to add, - to subtract, * to multiply, and / to divide.\n")
+if choice == "+":
+	add_numbers(x,y)
+	
+elif choice == "-":
+	sub_numbers(x,y)
 
 
 
