@@ -1,6 +1,6 @@
 # -------------------------------------------- 
-x= 10
-y= 5
+x= 5
+y= 10
 	# You've just learned all about functions. 
 	# Now take what you've learned to create your own
 
@@ -108,25 +108,27 @@ print(quotient)
 # Write a function that will prompt the user for the operation they want to call and the values they are inputting.
 
 # -------------------------------------------- 
+def calculator():
+	number1 = int (input("which number do you want to use? \n"))
+	number2 = int (input("which other number do you want to use? \n"))
+	total = 0
+	choice = input("use + to add, - to subtract, * to multiply, and / to divide.\n")
+	if choice == "+":
+		total = add_numbers(number1,number2)
 
-choice = input("use + to add, - to subtract, * to multiply, and / to divide.\n")
-if choice == "+":
-	add_numbers(x,y)
+		
+	elif choice == "-":
+		total = sub_numbers(number1,number2)
+
+	elif choice == "*":
+		total = multiply_numbers(number1,number2)
+
+	elif choice == "/":
+		total = divide_numbers(number1,number2)
 	
-elif choice == "-":
-	sub_numbers(x,y)
+	print(total)
 
-elif choice == "*":
-	multiply_numbers(x,y)
-
-elif choice == "/":
-	divide_numbers(x,y)
-
-
-numbers = input 
-
-
-
+calculator()
 
 
 
