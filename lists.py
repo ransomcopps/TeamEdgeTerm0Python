@@ -189,15 +189,33 @@ print("letter by letter: " + str(word_split_list))
 split_me = "I heard Alex was late to class today."
 x = split_me.split()
 x.pop(2)
-x[2].append("bob")
+x[2] = "Bobby"
+print(x)
+x = " ".join(x)
 print(x)
 
 
 #-->TODO: Add an exclamation mark to this sentence using split() and append(), then print. (yes, there are other ways, but...)
 make_me_exciting = "What a wonderful day"
-
+y = make_me_exciting.split()
+y.append("!")
+y = " ".join(y)
+print(y)
 #We can also join our list elements into a string using.....join()!
 rejoined = " ".join(boring_list)  #joins it using spaces
 print('back in one piece: ' + rejoined)
 
 #-->TODO:  Finally, put the split_me sentence today and the make_me_exciting strings back together and print. You should see a string
+make_me_exciting = "What a wonderful day"
+y = make_me_exciting.split()
+y.append("!")
+y = " ".join(y)
+print(y)
+
+split_me = "I heard Alex was late to class today."
+x = split_me.split()
+x.pop(2)
+x[2] = "Bobby"
+print(x)
+x = " ".join(x)
+print(x)
