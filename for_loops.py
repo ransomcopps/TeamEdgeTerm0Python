@@ -25,7 +25,8 @@ for x in range(11):
    
 
 #-->TODO: Write a loop that prints a happy birthday message for every year you have been alive.
-
+for y in range(0,101,1):
+    print("happy birthday! you are now " + str(y))
 
 
 print("------------------- CHALLENGE 2 : ITERATOR ----------------------")
@@ -38,10 +39,11 @@ for x in colors:
     print("The color is: " + x)
 
 #-->TODO: Declare a list with at least 5 animals. You provide the animals.
-animals = []
+animals = ['turtle', 'cat', 'rabbit', 'chicken', 'parrot']
 
 #-->TODO: Print all the animals in the array with a for loop. 
-
+for y in animals:
+    print("this animal is a " + y)
 
 
 print("------------------- CHALLENGE 3 : EVEN COUNTDOWN ------------------")
@@ -57,30 +59,43 @@ else:
     print(str(random) + " is odd!")
 
 #-->TODO: Write a function that counts BACKWARDS from 100 and prints only even numbers
-
+for x in range(100, -1, -2):
+    print(x)
 
 #-->TODO: Write a function that counts BACKWARDS from the given random number and prints only odd numbers
+for x in range((random), 0, -3):
+
+    if random % 2 == 0:
+        print(str(random) + " is even!")
+    else:
+        print(str(random) + " is odd!")
 
 
 print("------------------- CHALLENGE 4 : Finder ------------------")
 
 #This code uses the in operator to see if an element exists in a list. It only has to appear once.
-color = input('Type a one word color and see if it is one of my favorite colors! >> ')
-if color in colors:
-    print("Yes, that color is a fav")
-else:
-    print("No, that color is not one of my favorites")
+#color = input('Type a one word color and see if it is one of my favorite colors! >> ')
+#if color in colors:
+    #print("Yes, that color is a fav")
+#else:
+    #print("No, that color is not one of my favorites")
 
 #-->TODO Declare a list of any strings you  want: cities, friends, movies, etc.
-
+anime = ['dragon ball', 'ranma 1/2', 'sailor moon','saint seya','spy x family']
 
 
 #-->TODO Write function to prompt the user to "Guess" if an element is present in your list. Store their response in a variable. 
 #   --> If their guess is in your list, print CONGRATULATIONS!
-
+def anime_guess():
+    anime = ['dragon ball', 'ranma 1/2', 'sailor moon','saint seya','spy x family']
+    anime_guess = input("guess which anime i am thinking about.\n")
+    if anime_guess in anime:
+        print("correct")
+    else:
+        print("incorrect")   
 
 #-->TODO Call your function.
-
+anime_guess()
 
 
 print("------------------- CHALLENGE 5 : Nested ------------------")
@@ -98,6 +113,10 @@ for color in colors:
 
 
 #-->TODO Write a function that prints every letter in a sentence that a user enters.
-
+def print_letters():
+    letters = input("type a sentence please. \n")
+    for letter in letters:
+        print(letter)
+print_letters()
 
 #-->CHALLENGE: Let the user know which word is the shortest one!
