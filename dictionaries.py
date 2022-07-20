@@ -40,8 +40,14 @@ print(dictionary)
 
 ##################################  MY dictionary ########################### #/
 
-
-
+student_of_code_next = {
+    "name": "Ransom",
+    "age": 16,
+    "is_human": True,
+    "grade": "10th",
+    "anime_that_he_watched": ["sailor moon", "ranma1/2","dragon_ball"]
+}
+print(student_of_code_next)
 
 
 
@@ -52,20 +58,20 @@ print(dictionary)
 print("------------------- CHALLENGE 2 : MODIFY   -------------------")
 
 #-->TODO: Print your dictionary you created above
-
+#check
 
 #-->TODO: Update the dictionary you just created  by adding new properties and values, including list elements, in this section.
-
-
+student_of_code_next["favorite_sport"]= "basketball"
+student_of_code_next["height"]= "6`1"
 #-->TODO: Print your dictionary again and observe changes
-
+print(student_of_code_next)
 
 print("------------------- CHALLENGE 3 : MEHTODS   -------------------")
 
 
 #-->TODO: Make a method that will update your dictionary value. It should take in a dictionary and return it modified.
-
-
+student_of_code_next.keys()
+print(student_of_code_next)
 #-->TODO: Call the method.
 
 
@@ -73,3 +79,4 @@ print("------------------- CHALLENGE 3 : MEHTODS   -------------------")
 print("------------------- CHALLENGE 4 : LITERALLY   -------------------")
 
 #-->TODO: Put it all together using a string literal to tell the story of your dictionary!
+print(f"Hello there. My name is {student_of_code_next['name']}. i am {student_of_code_next['age']}")
