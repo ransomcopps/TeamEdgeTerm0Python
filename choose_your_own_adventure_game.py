@@ -31,7 +31,8 @@ class Rooms:
         self.description = description
         self.items = items
         self.options = options
-
+    def __str__(self):
+        return str(self.options)
 # answer = input("Where to move?")
 # splitting = aswer.split(" ")
 # if splitting[0] == "move":
@@ -51,7 +52,7 @@ items =["cash", "pet dog"]
 living_room = Rooms(name, description, items)
 
 name = "hallway"
-description = "this is a hallway... duh."
+description = "this is a hallway... duh.btw you can go to bedroom, bedroom2, kitchen, bathroom, and living room. if you go to any of those, you can only go to hallway."
 items = [""]
 hallway = Rooms(name, description, items)
 
@@ -90,25 +91,24 @@ kitchen.options = [living_room , hallway]
 #win_area = Locations("Lover's house", [""],[])
 
 current_room = bedroom
-answer = input("What you want to do?")
-splitting = answer.split(" ")
-if splitting[0] == "move":
-    if splitting[1] == "hallway":
-        for move in current_room.options:
-        
-            
-            
 
-            print(hallway.description)
-    
-else:
-    print("i don't know that command")
 
 while player.water_meter > 0:
-    pass
-        
+    #input(answer)
+    answer = input("What you want to do?")
+    splitting = answer.split(" ")
+    if splitting[0] == "move":
+        player.water_meter=player.water_meter-1
+        for room in current_room.options:
+            if splitting[1] == room.name:
+                print(room.description)
+    elif splitting[0] == "use":
+        elif     
+    else:
+        print("i don't know that command")
 
-
-
-
+    if player.water_meter <= 0:
+        print("you died from dehydration")
+#make elif statements for items
+    
     

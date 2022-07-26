@@ -67,32 +67,34 @@ print(num1 + num2)
 # **** Challenge 2: Problem 2 ****
 # Store the difference between sum (above) and 7 in a variable.
 # Print the difference.
-print(sum - 7)
+difference = (sum - 7)
 
 # **** Challenge 2: Problem 3 ****
 # Store the product of the difference and 3 in a variable.
 # Print the product.
-print(8 * 3)
+product = (8 * 3)
+
+print(product)
 # **** Challenge 2: Problem 4 ****
 # Store the power of the product squared in a variable.
 # Print the power.
-print(24**2)
-
+the_power = (product**2)
+print(the_power)
 # **** Challenge 2: Problem 5 ****
 # Store the quotient of the power divided by 4 in a variable.
 # Print the quotient.
-print(576/4)
-
+quotient =(the_power/4)
+print(quotient)
 # **** Challenge 2: Problem 6 ****
 # Store the remainder of the quotient divided by 2 in a variable.
 # Print the remainder.
-print(144.8/2)
-
+remainder = (quotient/2)
+print(remainder)
 # **** Upchallenge! ****
 # Given a variable that stores a number, print the values that come right before and right after.
 # For example, given the number 4, the program should print 3 and 5. 
 # Your code should work even if the value of the variable is changed.
 
-num = 9
+
 
 # -------------------------------------------- 
