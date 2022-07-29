@@ -1,5 +1,6 @@
 is_alive = True
-Locations = []
+#Locations = []
+cloths_on = False
 
 class Player:
     def __init__(self,name):
@@ -7,11 +8,28 @@ class Player:
         self.water_meter = 5
         self.is_alive = True
 
+class Item:
+    def __init__(self,name,use_description):
+        self.name = name
+        self.use_description = use_description
+
+name = "water bottle"
+use_description = "you increased your water meter by 10. :D"
+water_bottle = Item(name, use_description) 
+      
+name = "cloths"
+use_description = "you can finally go outside without getting arrested. type exit house from the hallway to leave. :D"
+cloths = Item(name, use_description)
+
+name = "gun"
+use_description = "this is america, so guns are meta for protection. :D"
+gun = Item(name, use_description)
 
 name = input("hello there, what is your name?\n")
 player = Player(name)
 
-print(f"Hello there, {player.name}. You woke up in one faithful morning, and looked at your phone cuz you was bored. Looking at instagram, you looked at a instagram baddy, and her name is Lover. Lover DMed you and said she wants you to link up with her in her crib. You, being down bad decides you want to go slide without any questions involved, so you got up and is about to get ready, cuz you are literally naked right now.\n type move ____ to go somewhere. ")
+print(f"Hello there, {player.name}. You woke up in one faithful morning, and looked at your phone cuz you was bored. Looking at instagram, you looked at a instagram baddy, and her name is Lover. Lover DMed you and said she wants you to link up with her in her crib. You, being down bad decides you want to go slide without any questions involved, so you got up and is about to get ready, cuz you are literally naked right now.\n type move ____ to go somewhere. \n you can only access the hallway, but from there you can acess the bedroom, bathroom, living_room, kitchen, bedroom2. \n use ___ is needed to use your items. like WATERBOTTLE!")
+print("items: waterbottle, gun, clothes")
 
 class Locations:
     def __init__(self,name,items,rooms):
@@ -31,8 +49,10 @@ class Rooms:
         self.description = description
         self.items = items
         self.options = options
+    def __repr__(self):
+        return self.name
     def __str__(self):
-        return str(self.options)
+        return self.name
 # answer = input("Where to move?")
 # splitting = aswer.split(" ")
 # if splitting[0] == "move":
@@ -41,22 +61,22 @@ class Rooms:
 
 
 name = "Kitchen"
-description = f"The kitchen is where people go to eat.{player} probably wants to grab something to eat before he leaves."
+description = f"The kitchen is where people go to eat.{player.name} probably wants to grab something to eat before he leaves."
 items =["peanut butter", "jelly"]
 kitchen = Rooms(name, description,items)
 
 
-name = "living room"
+name = "living_room"
 description = "you are in thr living room, and you see your nice cute dog... even though turtles are better."
 items =["cash", "pet dog"]
 living_room = Rooms(name, description, items)
 
 name = "hallway"
-description = "this is a hallway... duh.btw you can go to bedroom, bedroom2, kitchen, bathroom, and living room. if you go to any of those, you can only go to hallway."
+description = "this is a hallway... duh.btw you can go to bedroom1, bedroom2, kitchen, bathroom, and living room. if you go to any of those, you can only go to hallway."
 items = [""]
 hallway = Rooms(name, description, items)
 
-name1 = "bedroom1"
+name = "bedroom"
 description = "this is your bedroom"
 items = ["comb", "cloths"]
 bedroom = Rooms(name, description, items)
@@ -67,7 +87,7 @@ items = ["gun", "water bottle"]
 bedroom2 = Rooms(name, description, items)
 
 name = "bathroom"
-description = f"this is where you sh*t and p*ss in... oh and shower, i forgot cuz {player}'s smelly a** doesn't take any. sorry for my language."
+description = f"this is where you sh*t and p*ss in... oh and shower, i forgot cuz {player.name}'s smelly a** doesn't take any. sorry for my language."
 items = ["note"]
 bathroom = Rooms(name, description, items) 
 
@@ -102,13 +122,42 @@ while player.water_meter > 0:
         for room in current_room.options:
             if splitting[1] == room.name:
                 print(room.description)
+                current_room = room
     elif splitting[0] == "use":
-        elif     
+        if splitting[1] == "waterbottle":
+            player.water_meter += 10
+            print(water_bottle.use_description)
+
+        elif splitting[1] == "clothes":
+            print(cloths.use_description)
+            cloths_on = True
+
+        
+        elif splitting[1] == "gun":
+            print(gun.use_description)
+
+
+    elif answer == "kill_dog":
+        print("You have attempted to kill the dog but dog is too strong!:D")
     else:
         print("i don't know that command")
 
     if player.water_meter <= 0:
         print("you died from dehydration")
+    
+    if cloths_on == True:
+        if splitting[0] == "exit":
+            if splitting[1] == "house":
+                print("you have completed the demon. congrats")
+                exit()
+        
+   
+    
+ 
+
+
+
+
 #make elif statements for items
     
     
