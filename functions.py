@@ -83,9 +83,8 @@ print("\n------------------- Challenge 2 -------------------\n")
 		# sum_double(2, 2) → 8
 
 # -------------------------------------------- 
-sum_double(4,2)
-
-
+def sum_double(a,b):
+	return a+b
 
 
 
@@ -98,13 +97,19 @@ sum_double(4,2)
 
 # Write a function called makes_10 that takes two numbers, a and b, and returns true if one of them is 10 or if their sum is 10.
 
+
 	# Examples:
 		# makes_10(9, 10) → True
 		# makes_10(9, 9) → False
 		# makes_10(1, 9) → True
 
 # -------------------------------------------- 
-
+def makes_10(a,b):
+	if a==10 or b==10 or a+b==10:
+		return True
+		else:
+			return False
+makes_10(a,b)
 
 
 
@@ -129,7 +134,8 @@ sum_double(4,2)
 		# alarm_clock(0, False) → "10:00"
 
 # -------------------------------------------- 
-
+def alarm_clock(a,b):
+	if 
 
 
 
@@ -144,7 +150,9 @@ sum_double(4,2)
 
 # Write a function that will tell you if you received a speeding ticket.
 # You are driving a little too fast, and a police officer stops you. 
-
+def print_greeting():
+	print("hi, how are you")
+	print_greeting()
 # To compute the result, encoded as a number value: 
 	# 0=no ticket
 	# 1=small ticket

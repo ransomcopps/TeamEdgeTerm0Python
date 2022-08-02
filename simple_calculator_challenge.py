@@ -1,5 +1,6 @@
 # -------------------------------------------- 
-
+x= 5
+y= 10
 	# You've just learned all about functions. 
 	# Now take what you've learned to create your own
 
@@ -28,29 +29,32 @@ print("My Simple Calculator")
 # -------------------------------------------- 
 
 # Write a function called add_numbers that will take two numbers and return the sum.
-
-
+def add_numbers(x,y):
+	return x+y
+sum = add_numbers(x,y)
+print(sum)
 
 
 
 
 
 # Write a function called sub_numbers that will take two numbers and return the difference.
-
-
-
+def sub_numbers(x,y):
+	return x-y
+difference = sub_numbers(x,y)
+print(difference)
 
 
 # ------------
 # Testing Code - Uncomment the code below to test your code!
 
-# check_answers(add_numbers(5, 15), 20)
-# check_answers(add_numbers(3, 18), 21)
-# check_answers(add_numbers(12, 28), 40)
+#(add_numbers(5, 15), 20)
+#(add_numbers(3, 18), 21)
+#(add_numbers(12, 28), 40)
 
-# check_answers(sub_numbers(18, 7), 11)
-# check_answers(sub_numbers(11, 9), 2)
-# check_answers(sub_numbers(18, 21), -3)
+#(sub_numbers(18, 7), 11)
+#(sub_numbers(11, 9), 2)
+
 
 # -------------------------------------------- 
 
@@ -67,14 +71,17 @@ print("My Simple Calculator")
 # -------------------------------------------- 
 
 # Write a function called multiply_numbers that will take two numbers and return the product.
-
-
-
-
+def multiply_numbers(x,y):
+	return x*y
+product = multiply_numbers(x,y)
+print(product)
 
 
 # Write a function called divide_numbers that will take two numbers and return the quotient.
-
+def divide_numbers(x,y):
+	return x/y
+quotient = divide_numbers(x,y)
+print(quotient)
 
 
 
@@ -101,14 +108,27 @@ print("My Simple Calculator")
 # Write a function that will prompt the user for the operation they want to call and the values they are inputting.
 
 # -------------------------------------------- 
+def calculator():
+	number1 = int (input("which number do you want to use? \n"))
+	number2 = int (input("which other number do you want to use? \n"))
+	total = 0
+	choice = input("use + to add, - to subtract, * to multiply, and / to divide.\n")
+	if choice == "+":
+		total = add_numbers(number1,number2)
 
+		
+	elif choice == "-":
+		total = sub_numbers(number1,number2)
 
+	elif choice == "*":
+		total = multiply_numbers(number1,number2)
 
+	elif choice == "/":
+		total = divide_numbers(number1,number2)
+	
+	print(total)
 
-
-
-
-
+calculator()
 
 
 

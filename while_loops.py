@@ -41,8 +41,13 @@ def test_prime(n):
     return True
 
 #-->TODO: Declare a while loop that prints all the prime numbers between 0 and 100, use test_prime() helper function
-
-
+num_1 = 0
+while num_1 <= 100:
+  if test_prime(num_1):
+    print(num_1)
+  num_1 += 1
+  
+  
 
 print("------------------- CHALLENGE 2 : FOUND   -------------------")
 
@@ -50,6 +55,18 @@ print("------------------- CHALLENGE 2 : FOUND   -------------------")
 items = ["pencil" , "eraser" , "mirror" , "comb" , "spoon" , "key" , "earrings" ,"cat food" , "magazine"]
 
 #-->TODO: Use a while loop to search the contents of a list for the key! If it exists, print "found the key!"
+guess = True
+while guess:
+  guess = input("look for the object.\n")
+if guess in item:
+  print("Found the key")
+guess = False
+else:
+  print("you have not found the key")
+  
+
+ 
+
 
 
 
